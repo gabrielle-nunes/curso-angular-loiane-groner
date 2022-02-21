@@ -1,0 +1,29 @@
+<section class="propery-binding">
+  <article>
+    <h3>Interpolação com Angular!</h3>
+    <p>String renderizada com interpolação: {{ url }}</p>
+    <p>Resultado de 2 + 2 é: {{ 2 + 2 }}</p>
+    <p>Resultado de 2 + 2 não é: {{ 2 + 2 + getValor() }}</p>
+    <p>Curso de Angular: {{ cursoAngular && getCurso() }}</p>
+  </article>
+
+  <article>
+    <h3>Property binding com Angular!</h3>
+    <h4>Esse gatinho não existe :(</h4>
+    <img src="{{ urlImagem }}" />
+    <img [src]="urlImagem" />
+  </article>
+
+  <article>
+    <h3>Class e Style Binding</h3>
+    <div>
+      Selecione uma classe:
+      <select #classe (change)="(0)">
+        <option value="alert-success">Sucesso</option>
+        <option value="alert-info">Info</option>
+        <option value="alert-warning">Alerta</option>
+        <option value="alert-danger">Erro</option>
+      </select>
+    </div>
+  </article>
+</section>

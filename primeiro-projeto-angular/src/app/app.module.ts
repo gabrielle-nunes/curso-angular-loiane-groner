@@ -7,13 +7,14 @@ import { AppComponent } from './app.component';
 import { CursosModule } from './cursos/cursos.module';
 import { PrimeiroComponente } from './primeiro-componente/primeiro-componente.component';
 import { SegundoComponenteComponent } from './segundo-componente/segundo-componente.component';
-
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrimeiroComponente,
-    SegundoComponenteComponent
+    SegundoComponenteComponent,
+    DataBindingComponent
   ],
   imports: [
     BrowserModule,
